@@ -19,9 +19,11 @@ Importance is determined by:
  2. Due date
  3. Order in the list
 
-`@next_action` waterfalls into indented regions. If the top level task that is selected to receive the `@next_action` label has subtasks, the same algorithm is used. The `@next_action` label is only applied to one task.
+`@next_action` waterfalls into indented regions. If the top level task that is selected to receive the `@next_action` label has subtasks, the same algorithm is used. The `@next_action` label is only applied to one task.  Tasks labeled @waiting or @future are skipped
 
 Parallel list processing
 ------
 If a list name ends with `=`, the top level of tasks will be treated as parallel `@next_action`s.
 The waterfall processing will be applied the same way as sequential lists - every parent task will be treated as sequential. This can be overridden by appending `=` to the name of the parent task.
+
+To skip projects, append a '*' to the end of the name
