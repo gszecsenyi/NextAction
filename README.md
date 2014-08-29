@@ -19,7 +19,7 @@ Importance is determined by:
  2. Due date
  3. Order in the list
 
-`@next_action` waterfalls into indented regions. If the top level task that is selected to receive the `@next_action` label has subtasks, the same algorithm is used. The `@next_action` label is only applied to one task.  Tasks labeled @waiting or @future are skipped
+`@next_action` waterfalls into indented regions. If the top level task that is selected to receive the `@next_action` label has subtasks, the same algorithm is used. The `@next_action` label is only applied to one task.  Tasks labeled @waiting or @future are skipped.
 
 Parallel list processing
 ------
