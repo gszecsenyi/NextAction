@@ -194,11 +194,6 @@ class Project(object):
     endsWithSequential = self.name.endswith(SEQUENTIAL_POSTFIX)
     validParent = self.parent == None or not self.parent.IsIgnored()
     seq = ((not ignored) and (not endsWithSequential)) and validParent
-    # if self.name .startsWith('Payer Camille'):
-#       print startsWithKeyword
-#       print endsWithEqual
-#       print parentSequential
-#       print seq
     return seq
 
   def IsParallel(self):
