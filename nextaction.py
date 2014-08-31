@@ -259,6 +259,7 @@ class TodoistData(object):
     self._labels_timestamp = label_data['DayOrdersTimestamp']
     self._next_action_id = None
     self._waiting_id = None
+    self._future_id = None
     for label in label_data['Labels'].values():
       if label['name'] == NEXT_ACTION_LABEL:
         self._next_action_id = label['id']
