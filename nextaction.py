@@ -66,7 +66,7 @@ def main():
     logging.debug('Connecting to the Todoist API')
     api = TodoistAPI(token=args.api_key)
     logging.debug('Syncing the current state from the API')
-    api.sync(resource_types=['projects', 'labels', 'items'])
+    response = api.sync()
 
     # Check the next action label exists
     labels = api.labels.all(lambda x: x['name'] == args.label)
@@ -112,7 +112,7 @@ def main():
     # Main loop
     while True:
         try:
-            api.sync(resource_types=['projects', 'labels', 'items'])
+            response = api.sync()
         except Exception as e:
             logging.exception('Error trying to sync with Todoist API: %s' % str(e))
         else:
