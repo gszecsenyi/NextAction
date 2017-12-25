@@ -118,6 +118,8 @@ def main():
         else:
             for project in api.projects.all():
                 project_type = get_project_type(project)
+                if project_type is None:
+                    project_type = 'parallel'
                 if project_type:
                     logging.debug('Project %s being processed as %s', project['name'], project_type)
 
