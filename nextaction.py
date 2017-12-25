@@ -141,7 +141,7 @@ def main():
 
                         if item_type or len(child_items) > 0:
                             # Process serial tagged items
-                            if item_type == 'serial':
+                            if item_type != 'parallel':
                                 for idx, child_item in enumerate(child_items):
                                     if idx == 0:
                                         add_label(child_item, label_id)
