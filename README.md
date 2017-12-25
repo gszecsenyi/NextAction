@@ -17,6 +17,8 @@ Requirements
 Activating NextAction
 =====================
 
+The default setup is, that a project is parallel and a task is serial. 
+
 Sequential list processing
 --------------------------
 If a project or task ends with `_`, the child tasks will be treated as a priority queue and the most important will be labeled `@next_action`.
