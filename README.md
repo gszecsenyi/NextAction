@@ -32,9 +32,17 @@ Executing NextAction
 
 You can run NexAction from any system that supports Python.
 
+Installation
+------------
+
+```bash
+sudo python setup.py install
+```
+
 Running NextAction
 ------------------
 
 NextAction will read your environment to retrieve your Todoist API key, so to run on a Linux/Mac OSX you can use the following commandline
-
+```bash
     python nextaction.py -a <API Key>
+```
