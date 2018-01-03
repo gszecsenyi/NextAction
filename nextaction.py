@@ -39,7 +39,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-a', '--api_key', help='Todoist API Key')
     parser.add_argument('-l', '--label', help='The next action label to use', default='next_action')
-    parser.add_argument('-d', '--delay', help='Specify the delay in seconds between syncs', default=10, type=int)
+    parser.add_argument('-d', '--delay', help='Specify the delay in seconds between syncs', default=5, type=int)
     parser.add_argument('--debug', help='Enable debugging', action='store_true')
     parser.add_argument('--inbox', help='The method the Inbox project should be processed',
                         default='parallel', choices=['parallel', 'serial'])
